@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer="true"></script>
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Form Validation</h2>
+        <form class="form">
+            <div class="input-field">
+                <label for="name">Name:</label>
+                <input class="input" type="text" placeholder="Your Name" id="name" required>
+            </div>
+
+            <div class="input-field">
+                <label for="email">Email:</label>
+                <input class="input" type="email" placeholder="Your Email" id="email" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Password:</label>
+                <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="input" type="password"
+                    placeholder="Your Password" id="password" required>
+            </div>
+            <button onclick="formValidation()" id="btn" type="submit">Submit Form</button>
+        </form>
+    </div>
+
+    <div class="hiddenContainer" id="message">
+        <h3>Password must contain the following:</h3>
+        <p class="invalid" id="upperCase">A <b> capital (upperCase) </b>letter</p>
+        <p class="invalid" id="lowercase">A <b>lowercase</b> letter</p>
+        <p class="invalid" id="number">A <b> number </b></p>
+        <p class="invalid" id="character">Minimum 8 <b> characters </b></p>
+    </div>
+</body>
+
+</html>

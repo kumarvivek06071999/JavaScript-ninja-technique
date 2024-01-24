@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 80%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.hiddenContainer {
+    display: none;
+    width: 80%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: large;
+
+}
+
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form {
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+
+}
+
+input::placeholder {
+    font-size: medium;
+    color: #555;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 22px;
+    margin: 20px;
+    border: none;
+    border-radius: 12px;
+}
+
+label {
+    font-size: 20px;
+
+}
+
+button {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.invalid::before {
+    position: relative;
+    margin-right: 20px;
+    content: "✖";
+}
+
+.valid::before {
+    position: relative;
+    margin-right: 20px;
+    content: "✔";
+}
