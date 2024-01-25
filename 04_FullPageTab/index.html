@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Tab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrtipt.js" defer></script>
+</head>
+
+<body>
+
+    <button class="tablinks" onclick="openPage('Home', this, 'red')">Home</button>
+    <button class="tablinks" onclick="openPage('News', this, 'green')">News</button>
+    <button class="tablinks" onclick="openPage('Contact', this, 'blue')">Contact</button>
+    <button class="tablinks" onclick="openPage('About', this, 'orange')">About</button>
+
+    <div id="Home" class="tabcontent">
+        <h1>Home</h1>
+        <p>Home is where the heart is..</p>
+    </div>
+    <div id="News" class="tabcontent">
+        <h1>News</h1>
+        <p>Some news this fine day!</p>
+    </div>
+    <div id="Contact" class="tabcontent">
+        <h1>Contact</h1>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+    <div id="About" class="tabcontent">
+        <h1>About</h1>
+        <p>Who we are and what we do.</p>
+    </div>
+
+</body>
+
+</html>
