@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+
+}
+
+.left {
+
+    width: 20%;
+    padding: 30px 25px;
+    display: block;
+    background-color: #333;
+
+
+}
+
+.left nav {
+    position: sticky;
+    top: 25px;
+    left: 30px;
+}
+
+.left nav ul li {
+    list-style-type: none;
+}
+
+.left nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+.right {
+    width: 70%;
+    padding: 30px 25px;
+    display: block;
+}
+
+.right p {
+    font-size: 20px;
+    margin-top: 30px;
+}
