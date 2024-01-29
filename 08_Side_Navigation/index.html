@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive side nav</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/67382dda9d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Animated Sidenav Example</h1>
+    <p>click on the element below to open the side navigation menu</p>
+    <div class="row">
+        <div id="openbtn" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div>
+            <p>Open</p>
+        </div>
+    </div>
+
+    <div class="left" id="Sidenav">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Client</a>
+                    <a href="#">Contact</a>
+                    <i onclick="closeNav()" class="fa-solid fa-x"></i>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>
