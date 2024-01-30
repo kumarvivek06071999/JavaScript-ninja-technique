@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px 20px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.row i {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.row p {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 30px 25px;
+    display: none;
+    background-color: #333;
+    z-index: 1;
+
+
+}
+
+
+.left nav {
+    position: sticky;
+    top: 25px;
+    left: 30px;
+}
+
+.left nav ul li {
+    list-style-type: none;
+}
+
+.left nav ul li a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    display: block;
+    margin-top: 20px;
+
+}
+
+.left nav ul li i {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 667px) {
+    .left {
+        width: 70%;
+    }
+
+}
