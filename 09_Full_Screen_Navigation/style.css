@@ -38,7 +38,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     padding: 30px 25px;
     display: none;
@@ -46,6 +46,12 @@ p {
     z-index: 1;
 
 
+}
+
+.mystyle {
+    /* height: 400px;
+    width: 400px; */
+    transition: 0.5s;
 }
 
 
@@ -76,6 +82,7 @@ p {
     right: 30px;
     top: 0;
     cursor: pointer;
+    transition: 0.8s;
 
 }
 

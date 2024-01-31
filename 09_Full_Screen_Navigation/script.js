@@ -3,6 +3,7 @@ const menu = document.getElementById("openbtn")
 const openNav = () => {
     console.log(leftNav)
     leftNav.style.display = "block"
+    leftNav.classList.add("mystyle");
 }
 
 const closeNav = () => {
