@@ -14,5 +14,6 @@ document.addEventListener("click", (e) => {
 
     if (!leftNav.contains(e.target) && !menu.contains(e.target)) {
         leftNav.style.display = "none"
+
     }
 })
