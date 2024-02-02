@@ -1,19 +1,8 @@
-const leftNav = document.getElementById("Sidenav")
-const menu = document.getElementById("openbtn")
-const openNav = () => {
-    console.log(leftNav)
-    leftNav.style.display = "block"
-    leftNav.classList.add("mystyle");
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
 }
 
-const closeNav = () => {
-    leftNav.style.display = "none"
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
 }
-
-document.addEventListener("click", (e) => {
-
-    if (!leftNav.contains(e.target) && !menu.contains(e.target)) {
-        leftNav.style.display = "none"
-
-    }
-})

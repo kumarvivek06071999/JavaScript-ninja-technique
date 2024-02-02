@@ -1,40 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive side nav</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <script src="https://kit.fontawesome.com/67382dda9d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
 </head>
 
 <body>
-    <h1>Animated Sidenav Example</h1>
-    <p>click on the element below to open the side navigation menu</p>
-    <div class="row">
-        <div id="openbtn" onclick="openNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div>
-            <p>Open</p>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
         </div>
     </div>
 
-    <div class="left" id="Sidenav">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Client</a>
-                    <a href="#">Contact</a>
-                    <i onclick="closeNav()" class="fa-solid fa-x"></i>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <h2>Fullscreen Overlay Nav Example</h2>
+    <p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+    <p>In this example, the navigation menu will slide in, from left to right:</p>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+
 
 </body>
 
